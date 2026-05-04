@@ -1,0 +1,19 @@
+name = "prodtovary-feedback"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+# KV storage для rate limit и хранения магазинов
+[[kv_namespaces]]
+binding = "KV"
+id = "REPLACE_WITH_KV_ID"  # создашь через: wrangler kv:namespace create KV
+
+# Переменные окружения (секреты ставятся через `wrangler secret put`)
+[vars]
+ENVIRONMENT = "production"
+TELEGRAM_CHANNEL_ID = "-1001234567890"  # ID канала с отзывами (заменишь)
+ADMIN_CHAT_IDS = "123456789,987654321"  # TG ID админов через запятую
+
+# Секреты, которые нужно установить через `wrangler secret put`:
+# TELEGRAM_BOT_TOKEN — токен бота от @BotFather
+# WEBHOOK_SECRET — случайная строка (32 символа) для защиты webhook
