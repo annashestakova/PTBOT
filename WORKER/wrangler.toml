@@ -6,7 +6,7 @@ compatibility_flags = ["nodejs_compat"]
 # KV storage для rate limit и хранения магазинов
 [[kv_namespaces]]
 binding = "KV"
-id = "REPLACE_WITH_KV_ID"  # создашь через: wrangler kv:namespace create KV
+id = "e2728716c5e74bb5a9d3874ca233a63f"  # создашь через: wrangler kv:namespace create KV
 
 # Переменные окружения (секреты ставятся через `wrangler secret put`)
 [vars]
