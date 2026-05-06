@@ -11,7 +11,7 @@ id = "e2728716c5e74bb5a9d3874ca233a63f"  # создашь через: wrangler k
 # Переменные окружения (секреты ставятся через `wrangler secret put`)
 [vars]
 ENVIRONMENT = "production"
-TELEGRAM_CHANNEL_ID = "692965876"  # ID канала с отзывами (заменишь)
+TELEGRAM_CHANNEL_ID = "-1003985517981"  # ID канала с отзывами (заменишь)
 ADMIN_CHAT_IDS = "123456789,987654321,692965876"  # TG ID админов через запятую
 
 # Секреты, которые нужно установить через `wrangler secret put`:
