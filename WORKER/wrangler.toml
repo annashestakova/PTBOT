@@ -12,7 +12,7 @@ id = "e2728716c5e74bb5a9d3874ca233a63f"  # создашь через: wrangler k
 [vars]
 ENVIRONMENT = "production"
 TELEGRAM_CHANNEL_ID = "-1003985517981"  # ID канала с отзывами (заменишь)
-ADMIN_CHAT_IDS = "123456789,987654321,692965876"  # TG ID админов через запятую
+ADMIN_CHAT_IDS = "692965876"  # TG ID админов через запятую
 
 # Секреты, которые нужно установить через `wrangler secret put`:
 # TELEGRAM_BOT_TOKEN — токен бота от @BotFather
